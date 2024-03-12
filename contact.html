@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fichier.css"> <!-- Assurez-vous d'ajuster le chemin selon votre structure -->
+    <title>Contact - Votre Site de Vente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #ddd;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-bottom: 0;">Contactez-Nous</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="contact.html">Contact</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="paiement.html">paiement</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <h2>Formulaire de Contact</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024Vintage shirt</p>
+    </footer>
+
+    <div class="background-overlay"></div>
+</body>
+
+</html>
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fichier.css"> <!-- Assurez-vous d'ajuster le chemin selon votre structure -->
+    <title>Paiement - Votre Site de Vente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #ddd;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .payment-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .payment-form {
+            width: 50%;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .payment-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .payment-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .payment-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-bottom: 0;">Paiement </h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="contact.html">Contact</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="paiement.html">paiement</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </header>
+
+    <div class="payment-container">
+        <div class="payment-form">
+            <label for="cardNumber">Numéro de carte:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+
+            <label for="expiryDate">Date d'expiration:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+
+            <button onclick="processPayment()">Payer</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024Vintage shirt</p>
+    </footer>
+
+    <div class="background-overlay"></div>
+
+    <script>
+        function processPayment() {
+            // Vous pouvez personnaliser cette fonction pour traiter le paiement
+            alert("Paiement réussi! Merci pour votre achat.");
+            window.location.href = 'index.html'; // Redirection vers la page de confirmation
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fichier.css"> <!-- Assurez-vous d'ajuster le chemin selon votre structure -->
+    <title>Produits - Votre Site de Vente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #ddd;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            width: calc(33.33% - 40px);
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-bottom: 0;">Bienvenue sur Notre Site de Vente de Maillots Vintage</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="contact.html">Contact</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="paiement.html">paiement</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </header>
+
+    <div class="products-container">
+        <div class="product">
+            <img src="media/barca.jpg" alt="Maillot 1">
+            <h2>Le Futbol Club Barcelona</h2>
+            <p>Maillot retro vintage FC Barcelona à domicile 2007-08</p>
+            <p>Prix: $29.99</p>
+            <button onclick="acheter('Le Futbol Club Barcelona', 29.99)">Acheter</button>
+        </div>
+
+        <div class="product">
+            <img src="media/real.jpg" alt="Maillot 2">
+            <h2>Real Madrid Club de Fútbol</h2>
+            <p>Maillot Retro Vintage Real Madrid 2010-11</p>
+            <p>Prix: $24.99</p>
+            <button onclick="acheter('Real Madrid Club de Fútbol', 24.99)">Acheter</button>
+        </div>
+
+        <div class="product">
+            <img src="media/city.jpg" alt="Maillot 3">
+            <h2>Manchester City Football Club</h2>
+            <p>Maillot Retro Vintage Manchester City 1997-98</p>
+            <p>Prix: $34.99</p>
+            <button onclick="acheter('Manchester City Football Club', 34.99)">Acheter</button>
+        </div>
+        <div class="product">
+            <img src="media/man u.jpg" alt="Maillot 4">
+            <h2>Manchester United Football Club</h2>
+            <p>Maillot Retro Vintage Manchester United 2008-09</p>
+            <p>Prix: $24.99</p>
+            <button onclick="acheter('Manchester United Football Club', 24.99)">Acheter</button>
+        </div>
+        <div class="product">
+            <img src="media/arsenal.jpg" alt="Maillot 5">
+            <h2>Arsenal Football Club</h2>
+            <p>Maillot Retro Vintage Arsenal Home 2005-06</p>
+            <p>Prix: $24.99</p>
+            <button onclick="acheter('Arsenal Football Club', 24.99)">Acheter</button>
+        </div>
+        <div class="product">
+            <img src="media/psg.jpg" alt="Maillot 5">
+            <h2>Arsenal Football Club</h2>
+            <p>Maillot Retro Vintage PSG 2017-18</p>
+            <p>Prix: $24.99</p>
+            <button onclick="acheter('Arsenal Football Club', 24.99)">Acheter</button>
+        </div>
+    
+
+        <!-- Ajoutez ici les autres produits de la même manière -->
+
+    
+
+    <footer>
+        <p>&copy; 2024Vintage shirt</p>
+    </footer>
+
+    <div class="background-overlay"></div>
+
+    <!-- Ajoutez un script pour gérer l'achat -->
+    <script>
+        function acheter(nomProduit, prixProduit) {
+            // Vous pouvez personnaliser cette fonction selon vos besoins
+            alert(`Merci d'avoir acheté ${nomProduit} pour ${prixProduit} $ !`);
+            window.location.href = 'paiement.html'; // Redirection vers la page de commande
+        }
+    </script>
+</body>
+
+</html>
